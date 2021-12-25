@@ -1,0 +1,62 @@
+*
+{
+    margin: auto;
+    box-sizing: content-box;
+}
+/* d32121 */
+body
+{
+    background-color: rgb(50 45 45);
+}
+.contaner img
+{
+    position: fixed;
+    animation: photo 2s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes photo {
+    0%  {transform: translateX(50vw) ; transform: scaleX(20deg);}
+    100%  {transform: translateX(0vw);}
+}
+.box
+{
+    background-color:#d32121a6 ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);  
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+.box h2{
+    text-align: center;
+}
+.box .date select
+{
+    background-color: #000;
+    color:#d32121a6 ;
+    font-size: 20px;
+}
+.box .chootype label
+{
+    text-transform:capitalize ;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.box > input
+{
+    color: #d32121;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #000;
+    cursor: pointer;
+}
