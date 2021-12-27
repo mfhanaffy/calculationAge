@@ -4,9 +4,16 @@
     box-sizing: content-box;
 }
 /* d32121 */
-body
+
+.contaner
 {
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(50 45 45);
+    position: relative;
+}
+@media (max-width:525px){
+    .contaner{padding: 0 20px;text-align: center;}
 }
 .contaner img
 {
@@ -17,8 +24,8 @@ body
     animation-direction: alternate;
 }
 @keyframes photo {
-    0%  {transform: translateX(50vw) ; transform: scaleX(20deg);}
-    100%  {transform: translateX(0vw);}
+    0%  {left: 0;}
+    100%  {left: 900px;}
 }
 .box
 {
@@ -34,6 +41,9 @@ body
     flex-direction: column;
     flex-wrap: nowrap;
     
+}
+@media (max-width:525px){
+    .contaner .box{width: 80%; margin: 0 auto;}
 }
 .box h2{
     text-align: center;

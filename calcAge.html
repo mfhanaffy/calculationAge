@@ -14,13 +14,10 @@
         <form action="" class="box">
             <h2> type your Date your birth and ,i will till you ,what  is your age ? </h2>
             <div class="date">
-                <select  class="YEARS">
-                    <optgroup label="years">
-                        <option value="1950">2021</option>
-                    </optgroup>
+                <select  class="chooYEARS" id="selectYears">
                 </select >
                 <select  class="MOUNTH">
-                    <optgroup label="mounth">
+                    <optgroup label="mounth" id="chooMOUNTH">
                         <option value="1" >January</option>
                         <option value="2" >February</option>
                         <option value="3" >March</option>
@@ -35,27 +32,27 @@
                         <option value="12">December </option>
                     </optgroup>
                 </select >
-                <select  class="DAYS">
-                    <optgroup label="days">
-                        <option value="1">1</option>
-                    </optgroup>
+                <select  class="DAYS" id="DAYS">
                 </select >
             </div>
             <div class="chootype">
-                <input type="radio" name="22" value="years">
-                <label for="">years</label>
-                <input type="radio" name="22" value="mounth">
-                <label for="">mounth</label>
-                <input type="radio" name="22" value="days">
-                <label for="">days</label>
-                <input type="radio" name="22" value="minutes">
-                <label for="">minutes</label>
-                <input type="radio" name="22" value="second">
-                <label for="">second</label>
+                <input type="radio" name="22"  value="years" id="years">
+                <label for="years">years</label>
+                <input type="radio" name="22" value="mounth" id="mounth">
+                <label for="mounth">mounth</label>
+                <input type="radio" name="22" value="days" id="days">
+                <label for="days">days</label>
+                <input type="radio" name="22" value="hours" id="hours">
+                <label for="hours">hours</label>
+                <input type="radio" name="22" value="minutes" id="minutes">
+                <label for="minutes">minutes</label>
+                <input type="radio" name="22" value="second" id="second">
+                <label for="second">second</label>
             </div>
         <input type="submit" id="submit" value="submit">
         </form>
         
     </div>
 </body>
+<script src="js/calcAge.js"></script>
 </html>
