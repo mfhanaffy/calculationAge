@@ -7,25 +7,13 @@
 
 .contaner
 {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     background-color: rgb(50 45 45);
     position: relative;
 }
 @media (max-width:525px){
     .contaner{padding: 0 20px;text-align: center;}
-}
-.contaner img
-{
-    position: fixed;
-    animation: photo 2s;
-    animation-timing-function:ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-@keyframes photo {
-    0%  {left: 0;}
-    100%  {left: 900px;}
 }
 .box
 {
