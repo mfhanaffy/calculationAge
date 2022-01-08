@@ -15,43 +15,39 @@
             <div class="date">
                 <select  class="chooYEARS" id="selectYears">
                 </select >
-                <select  class="MOUNTH">
+                <select  class="MOUNTH" id="MOUNTH">
                     <optgroup label="mounth" id="chooMOUNTH">
-                        <option value="1" >January</option>
-                        <option value="2" >February</option>
-                        <option value="3" >March</option>
-                        <option value="4">April</option>
-                        <option value="5">May</option>
-                        <option value="6">June</option>
-                        <option value="7">July</option>
-                        <option value="8">August</option>
-                        <option value="9">September </option>
-                        <option value="10">October</option>
-                        <option value="11">November</option>
-                        <option value="12">December </option>
+                        <option value="January" >January</option>
+                        <option value="February" >February</option>
+                        <option value="March" selected >March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September </option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December </option>
                     </optgroup>
                 </select >
                 <select  class="DAYS" id="DAYS">
                 </select >
             </div>
-            <div class="chootype">
-                <input type="radio" name="22"  value="years" id="years">
-                <label for="years">years</label>
-                <input type="radio" name="22" value="mounth" id="mounth">
-                <label for="mounth">mounth</label>
-                <input type="radio" name="22" value="days" id="days">
-                <label for="days">days</label>
-                <input type="radio" name="22" value="hours" id="hours">
-                <label for="hours">hours</label>
-                <input type="radio" name="22" value="minutes" id="minutes">
-                <label for="minutes">minutes</label>
-                <input type="radio" name="22" value="second" id="second">
-                <label for="second">second</label>
-            </div>
         <input type="submit" id="submit" value="submit">
         </form> 
-        
     </div>
+    <div class="contaner">
+            <div class="box2" id="box2">
+                <p> you are &nbsp; <span id="spanYears"></span> &nbsp; Years</p>
+                <p> you are &nbsp;  <span id="spanMonths"></span> &nbsp;  Months</p>
+                <p> you are &nbsp;  <span id="spanWeeks"></span> &nbsp;  Weeks</p>
+                <p> you are &nbsp;  <span id="spanDays"></span> &nbsp;  Days</p>
+                <p> you are &nbsp;  <span id="spanHours"></span> &nbsp;  Hours</p>
+                <p> you are &nbsp;  <span id="spanMinutes"></span> &nbsp;  Minutes</p>
+            </div>
+    </div>
+
 </body>
 <script src="js/calcAge.js"></script>
 </html>
