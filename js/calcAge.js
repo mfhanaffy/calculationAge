@@ -23,11 +23,6 @@ function years(start , end) {
 years(1900 , 2021)
 let optgroup = document.getElementById("chooYEARS") ;
 chooYEARS.appendChild(optgroup)
-let  select = document.getElementById("2001") ;
-
-
-select.setAttribute("selected" , "");
-
 
 //days
 let selectdays = document.getElementById("DAYS") ;
@@ -35,7 +30,8 @@ let selectdays = document.getElementById("DAYS") ;
 function dayes(start , end) {
     document.write(`<optgroup label="days" id="choodays">`)
         for(let i = start ; i <= end ; i++){
-            document.write("<option value=" + i + ">" + i + "</option>")
+            document.write("<option value='" + i + "'" + "id='" + i + "'>" + i + "</option>")
+
         }
     document.write(`</optgroup>`)
     
@@ -44,6 +40,14 @@ dayes(1 , 31)
 let choodays = document.getElementById("choodays") ;
 
 selectdays.appendChild(choodays);
+
+let  select = document.getElementById("2001") ;
+let  select2 = document.getElementById("14") ;
+
+
+select.setAttribute("selected" , "");
+select2.setAttribute("selected" , "");
+
 
 // save data
 
